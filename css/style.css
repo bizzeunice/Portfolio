@@ -1,0 +1,82 @@
+@import url(https://fonts.googleapis.com/css?family=Gabarito:wght@100..900&display=swap);
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #f1f1f1;
+}
+#head-show{
+    background: linear-gradient(rgba(15, 41, 51, 0.7),rgba(27, 81, 97, 0.7)),url(../img/bg-img.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 5%;
+}
+.logo{
+    font-size: 1.7em;
+    font-weight: bold;
+    color: white;
+    font-family: Gabarito;
+    letter-spacing: 1px;
+}
+nav ul{
+   list-style: none; 
+   display: flex;
+   gap:50px
+}
+nav ul li a{
+    font-size: 13pt;
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.showcase{
+    text-align: center;
+    color: white;
+    padding: 10% 0%;
+}
+.showcase h1{
+    font-size:2em ;
+    font-family: Gabarito;
+    letter-spacing: 1px;
+}
+.showcase h2{
+    font-weight: 100;
+    font-size: 3em ;
+    font-family: Gabarito;
+    letter-spacing: 3px;
+    padding: 10px 0px;
+    overflow: hidden;
+    width: fit-content;
+    white-space: nowrap;
+     border-right: .10em solid rgba(255,255,255,0.5);
+    margin: 0 auto;
+    animation: typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite; 
+}
+
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white}
+  }
+.big{
+    font-weight: 700;
+}
+.icons i{
+    padding: 4px;
+    font-size: 12pt;
+    color: aliceblue;
+}
